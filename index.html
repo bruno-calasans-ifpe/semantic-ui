@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semantic UI - Demo</title>
+
+  <!-- Semantic UI CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+    integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Jquery -->
+  <script src="jquery.js"></script>
+
+</head>
+
+<body>
+  <style>
+    body {
+      background-color: bisque;
+      padding: 40px;
+    }
+
+    .box {
+      display: flex;
+    }
+
+    .title-center {
+      text-align: center;
+    }
+  </style>
+
+  <h1>Semantic UI - Demo</h1>
+
+  <h2 class="title-center">Botões</h2>
+  <button class="ui button">
+    Follow
+  </button>
+
+  <div class="ui labeled button" tabindex="0">
+    <div class="ui button">
+      <i class="heart icon"></i> Like
+    </div>
+    <a class="ui basic label">
+      2,048
+    </a>
+  </div>
+
+  <button class="ui icon button">
+    <i class="cloud icon"></i>
+  </button>
+
+  <div class="ui animated button" tabindex="0">
+    <div class="visible content">Next</div>
+    <div class="hidden content">
+      <i class="right arrow icon"></i>
+    </div>
+  </div>
+
+  <br>
+  <hr>
+  <br>
+
+  <!-- Loader -->
+  <h2 class="title-center">Loader</h2>
+  <div class="ui segment">
+    <p></p>
+    <div class="ui active dimmer">
+      <div class="ui loader"></div>
+    </div>
+  </div>
+
+  <br>
+  <hr>
+  <br>
+
+  <!-- Formulário -->
+  <h2 class="title-center">Formulário</h2>
+  <div class="box">
+    <form class="ui form">
+
+      <div class="field">
+        <label>First Name</label>
+        <input type="text" name="first-name" placeholder="First Name">
+      </div>
+
+      <div class="field">
+        <label>Last Name</label>
+        <input type="text" name="last-name" placeholder="Last Name">
+      </div>
+
+      <div class="field">
+        <div class="ui checkbox">
+          <input type="checkbox" tabindex="0">
+          <label>I agree to the Terms and Conditions</label>
+        </div>
+      </div>
+
+      <button class="ui button" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <br>
+  <hr>
+  <br>
+
+  <!-- Card -->
+  <h2 class="title-center">Card</h2>
+  <div class="ui card">
+    <div class="image">
+      <img src="img/no-image-icon.png">
+    </div>
+    <div class="content">
+      <a class="header">Kristy</a>
+      <div class="meta">
+        <span class="date">Joined in 2013</span>
+      </div>
+      <div class="description">
+        Kristy is an art director living in New York.
+      </div>
+    </div>
+    <div class="extra content">
+      <a>
+        <i class="user icon"></i>
+        22 Friends
+      </a>
+    </div>
+  </div>
+
+  <br>
+  <hr>
+  <br>
+
+  <!-- Seção de Comentários -->
+  <h2 class="title-center">Comentários</h2>
+  <div class="ui comments">
+    <h3 class="ui dividing header">Comments</h3>
+
+    <!-- comentário normal -->
+    <div class="comment">
+      <a class="avatar">
+        <img src="img/no-image-icon.png">
+      </a>
+      <div class="content">
+        <a class="author">Matt</a>
+        <div class="metadata">
+          <span class="date">Today at 5:42PM</span>
+        </div>
+        <div class="text">
+          How artistic!
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- comentário normal -->
+    <div class="comment">
+      <a class="avatar">
+        <img src="img/no-image-icon.png">
+      </a>
+      <div class="content">
+        <a class="author">Elliot Fu</a>
+        <div class="metadata">
+          <span class="date">Yesterday at 12:30AM</span>
+        </div>
+        <div class="text">
+          <p>This has been very useful for my research. Thanks as well!</p>
+        </div>
+        <div class="actions">
+          <a class="reply">Reply</a>
+        </div>
+      </div>
+
+      <!-- comentário de respostas (reply) -->
+      <div class="comments">
+        <div class="comment">
+          <a class="avatar">
+            <img src="img/no-image-icon.png">
+          </a>
+          <div class="content">
+            <a class="author">Jenny Hess</a>
+            <div class="metadata">
+              <span class="date">Just now</span>
+            </div>
+            <div class="text">
+              Elliot you are always so right :)
+            </div>
+            <div class="actions">
+              <a class="reply">Reply</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Campo de texto de reply -->
+    <form class="ui reply form">
+      <div class="field">
+        <textarea></textarea>
+      </div>
+      <div class="ui blue labeled submit icon button">
+        <i class="icon edit"></i> Add Reply
+      </div>
+    </form>
+  </div>
+
+  <br>
+  <hr>
+  <br>
+
+  <!-- messages -->
+  <h2 class="title-center">Mensagens</h2>
+  <div class="ui info message">
+    <i class="close icon"></i>
+    <div class="header">
+      Was this what you wanted?
+    </div>
+    <ul class="list">
+      <li>It's good to see you again.</li>
+      <li>Did you know it's been a while?</li>
+    </ul>
+  </div>
+
+  <div class="ui success message">
+    <i class="close icon"></i>
+    <div class="header">
+      Your user registration was successful.
+    </div>
+    <p>You may now log-in with the username you have chosen</p>
+  </div>
+
+  <div class="ui negative message">
+    <i class="close icon"></i>
+    <div class="header">
+      We're sorry we can't apply that discount
+    </div>
+    <p>That offer has expired
+    </p>
+  </div>
+
+  <br>
+  <hr>
+  <br>
+
+  <!-- Modal -->
+  <h2 class="title-center">Modal</h2>
+  <button onclick="toggleModal()" class="ui button">
+    Toggle Modal
+  </button>
+  <div class="ui active modal">
+    <div class="header">Header</div>
+    <div class="content">
+      <p>I'm a modal</p>
+    </div>
+    <div class="actions">
+      <div class="ui approve button">Approve</div>
+      <div class="ui button">Neutral</div>
+      <div class="ui cancel button">Cancel</div>
+    </div>
+  </div>
+
+  <script>
+    function toggleModal() {
+      // Using jquery
+      $('.ui.modal').toggle('.active')
+    }
+  </script>
+
+</html>
